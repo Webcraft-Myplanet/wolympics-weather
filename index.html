@@ -1,8 +1,111 @@
 <html>
 <head>
   <title>Weather</title>
+
+  <!-- Angular JS -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
+  <div class="main wrapper">
+    <div class="home-menu">
 
+      <div class="item toronto">
+        <div class="city-state">
+          <span class="city">Toronto</span>,
+          <span class="state">ON</span>
+        </div>
+        <div class="country">
+          Canada
+        </div>
+        <div class="current">
+          <div class="weather-description sunny"><span class="icon"></span><span class="description">Sunny</span></div>
+          <div class="weather-temp"><span class="num">3</span>&#176;C</div>
+        </div>
+
+        <div class="hi-low wrapper">
+          <div class="hi">
+            <div class="temp">
+              <span class="num">6</span>&#176;C
+            </div>
+            <div class="label">Hi</div>
+          </div> <!-- /hi -->
+          <div class="low">
+            <div class="temp">
+              <span class="num">1</span>&#176;C
+            </div>
+            <div class="label">Low</div>
+          </div> <!-- /low -->
+        </div> <!-- /hi-low -->
+
+        <div class="forecast wrapper">
+          <div class="label">Weekly Forecast</div>
+
+          <div class="day monday">
+            <div class="weather-icon"></div>
+            <div class="description wrapper">
+              <div class="weather-description">Sunny</div>
+              <div class="day-description">Monday</div>
+            </div>
+            <div class="hi-temp">24</div>
+            <div class="low-temp">21</div>
+          </div> <!-- /day -->
+
+          <div class="day tuesday">
+            <div class="weather-icon"></div>
+            <div class="description wrapper">
+              <div class="weather-description">Sunny</div>
+              <div class="day-description">Tuesday</div>
+            </div>
+            <div class="hi-temp">24</div>
+            <div class="low-temp">21</div>
+          </div> <!-- /day -->
+
+          <div class="day wednesday">
+            <div class="weather-icon"></div>
+            <div class="description wrapper">
+              <div class="weather-description">Sunny</div>
+              <div class="day-description">Wednesday</div>
+            </div>
+            <div class="hi-temp">24</div>
+            <div class="low-temp">21</div>
+          </div> <!-- /day -->
+
+        </div>
+      </div> <!-- /item -->
+
+      <div class="item new-york">
+        <div class="city-state">
+          <span class="city">New York</span>,
+          <span class="state">NY</span>
+        </div>
+        <div class="country">
+          United States
+        </div>
+        <div class="current">
+          <div class="weather-description rainy"><span class="icon"></span><span class="description">Rainy</span></div>
+          <div class="weather-temp"><span class="num">5</span>&#176;C</div>
+        </div>
+      </div> <!-- /item -->
+
+      <div class="item montreal">
+        <div class="city-state">
+          <span class="city">Montreal</span>,
+          <span class="state">QC</span>
+        </div>
+        <div class="country">
+          Canada
+        </div>
+        <div class="current">
+          <div class="weather-description cloudy"><span class="icon"></span><span class="description">Cloudy</span></div>
+          <div class="weather-temp"><span class="num">5</span>&#176;C</div>
+        </div>
+      </div> <!-- /item -->
+
+    </div> <!-- /home-menu -->
+  </div>
 </body>
 </html>

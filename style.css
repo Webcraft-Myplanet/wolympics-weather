@@ -1,0 +1,74 @@
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+/* Home menu */
+
+.home-menu {
+  color: #FFF;
+
+}
+
+.home-menu .item {
+  background-color: #FFD627;
+  margin: auto;
+  padding: 1em 0;
+  text-align: center;
+  border-top: 1px solid #FFF;
+}
+.home-menu .item.new-york {
+  background-color: #5093FF;
+}
+.home-menu .item.montreal {
+  background-color: #CCC;
+}
+
+/* Expanded */
+.hi,
+.low {
+  background-color: #7DE5FF;
+  float: left;
+  width: 50%;
+}
+
+.hi {
+  background-color: #FF3A6C;
+}
+
+/* Forecast */
+.forecast.wrapper {
+  background-color: #FFF;
+  color: #333;
+  clear: both;
+  padding: 1em;
+}
+
+.forecast .day {
+  border-top: 1px solid #EEE;
+}
+.forecast .day > div {
+  display: inline-block;
+}
+.forecast .day .hi-temp,
+.forecast .day .low-temp,
+.forecast .day .weather-icon {
+  width: 40px;
+}
+.forecast .day .weather-icon:before {
+  content: "&";
+}
+.forecast .day .description.wrapper {
+  text-align: left;
+  width: 50%;
+}
