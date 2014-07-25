@@ -6,6 +6,10 @@ html, body {
   width: 100%;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 .wrapper {
   box-sizing: border-box;
   margin: auto;
@@ -17,17 +21,15 @@ html, body {
 
 .home-menu {
   color: #FFF;
-
+  position: relative;
 }
 
 .home-menu .item {
   background-color: #FFD627;
   margin: auto;
-  padding: 1em 0;
   text-align: center;
-  border-top: 1px solid #FFF;
 }
-.home-menu .item.new-york {
+.home-menu .item.whitehorse {
   background-color: #5093FF;
 }
 .home-menu .item.montreal {
@@ -71,4 +73,46 @@ html, body {
 .forecast .day .description.wrapper {
   text-align: left;
   width: 50%;
+}
+
+/* States */
+.item .hi-low.wrapper,
+.item .forecast.wrapper {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.item.active .hi-low.wrapper,
+.item.active .forecast.wrapper {
+  height: auto;
+  padding: auto;
+}
+.item {
+  box-sizing: border-box;
+  height: 100px;
+  position: relative;
+  width: 100%;
+  top: 0;
+  transition: all .5s;
+}
+.item.active {
+  transition: all 1s;
+  height: 100%;
+}
+/*.item.active:nth-child(2) {
+  top: -100px;
+}
+.item.active:nth-child(3) {
+  top: -200px;
+}
+*/
+.home-menu.active .item.active {
+  opacity: 1;
+  height: auto;
+  padding: 1em 0 0;
+}
+.home-menu.active .item {
+  opacity: 0;
+  height: 0;
+  padding: 0;
 }

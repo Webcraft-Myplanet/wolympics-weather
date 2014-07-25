@@ -14,37 +14,44 @@
         {
           "description": "Rainy",
           "high": 30,
-          "low": 22
+          "low": 22,
+          "day": "Monday"
         },
         {
           "description": "Cloudy",
           "high": 32,
-          "low": 24
+          "low": 24,
+          "day": "Tuesday"
         },
         {
           "description": "Sunny",
           "high": 33,
-          "low": 22
+          "low": 22,
+          "day": "Wednesday"
         },
         {
           "description": "Sunny",
           "high": 28,
-          "low": 24
+          "low": 24,
+          "day": "Thursday"
         },
         {
           "description": "Cloudy",
           "high": 26,
-          "low": 24
+          "low": 24,
+          "day": "Friday"
         },
         {
           "description": "Rainy",
           "high": 25,
-          "low": 21
+          "low": 21,
+          "day": "Saturday"
         },
         {
           "description": "Sunny",
           "high": 35,
-          "low": 31
+          "low": 31,
+          "day": "Sunday"
         }
       ]
     },
@@ -62,45 +69,52 @@
         {
           "description": "Sunny",
           "high": 23,
-          "low": 18
+          "low": 18,
+          "day": "Monday"
         },
         {
           "description": "Sunny",
           "high": 22,
-          "low": 17
+          "low": 17,
+          "day": "Tuesday"
         },
         {
           "description": "Sunny",
           "high": 24,
-          "low": 19
+          "low": 19,
+          "day": "Wednesday"
         },
         {
           "description": "Sunny",
           "high": 25,
-          "low": 19
+          "low": 19,
+          "day": "Thursday"
         },
         {
           "description": "Cloudy",
           "high": 24,
-          "low": 20
+          "low": 20,
+          "day": "Friday"
         },
         {
           "description": "Sunny",
           "high": 23,
-          "low": 19
+          "low": 19,
+          "day": "Saturday"
         },
         {
           "description": "Sunny",
           "high": 22,
-          "low": 17
+          "low": 17,
+          "day": "Sunday"
         }
       ]
     },
     {
       "location": {
-        "city": "St John's",
-        "state": "Newfoundland",
-        "country": "Canada"
+        "city": "Montreal",
+        "state": "Quebec",
+        "country": "Quebec"
       },
       "current": {
         "description": "Rainy",
@@ -110,37 +124,44 @@
         {
           "description": "Rainy",
           "high": 23,
-          "low": 21
+          "low": 21,
+          "day": "Monday"
         },
         {
           "description": "Cloudy",
           "high": 25,
-          "low": 22
+          "low": 22,
+          "day": "Tuesday"
         },
         {
           "description": "Cloudy",
           "high": 26,
-          "low": 24
+          "low": 24,
+          "day": "Wednesday"
         },
         {
           "description": "Rainy",
           "high": 25,
-          "low": 23
+          "low": 23,
+          "day": "Thursday"
         },
         {
           "description": "Sunny",
           "high": 24,
-          "low": 22
+          "low": 22,
+          "day": "Friday"
         },
         {
           "description": "Rainy",
           "high": 24,
-          "low": 22
+          "low": 22,
+          "day": "Saturday"
         },
         {
           "description": "Rainy",
           "high": 26,
-          "low": 23
+          "low": 23,
+          "day": "Sunday"
         }
       ]
     }

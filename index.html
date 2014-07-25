@@ -1,4 +1,4 @@
-<html>
+<html ng-app="weatherApp">
 <head>
   <title>Weather</title>
 
@@ -8,34 +8,38 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
 
-</head>
-<body>
-  <div class="main wrapper">
-    <div class="home-menu">
+  <!-- Custom JS -->
+  <script type="text/javascript" src="script.js"></script>
 
-      <div class="item toronto">
+</head>
+<body ng-controller="weatherCtrl">
+  <div class="main wrapper">
+    <div class="home-menu" ng-click="homeActive = !homeActive" ng-class="{active: homeActive}">
+
+      <div ng-repeat="city in cities" class="item {{city.location.city | lowercase}}" ng-click="active = !active" ng-class="{active: active}" data-item-top="{{$index * 100}}">
         <div class="city-state">
-          <span class="city">Toronto</span>,
-          <span class="state">ON</span>
+          <span class="city">{{city.location.city}}</span>,
+          <span class="state">{{city.location.state}}</span>
         </div>
         <div class="country">
-          Canada
+          {{city.location.country}}
         </div>
+
         <div class="current">
-          <div class="weather-description sunny"><span class="icon"></span><span class="description">Sunny</span></div>
-          <div class="weather-temp"><span class="num">3</span>&#176;C</div>
+          <div class="weather-description {{city.current.description | lowercase}}"><span class="icon"></span><span class="description">{{city.current.description}}</span></div>
+          <div class="weather-temp"><span class="num">{{city.current.temp}}</span>&#176;C</div>
         </div>
 
         <div class="hi-low wrapper">
           <div class="hi">
             <div class="temp">
-              <span class="num">6</span>&#176;C
+              <span class="num">{{city.list[0].high}}</span>&#176;C
             </div>
             <div class="label">Hi</div>
           </div> <!-- /hi -->
           <div class="low">
             <div class="temp">
-              <span class="num">1</span>&#176;C
+              <span class="num">{{city.list[0].low}}</span>&#176;C
             </div>
             <div class="label">Low</div>
           </div> <!-- /low -->
@@ -44,64 +48,16 @@
         <div class="forecast wrapper">
           <div class="label">Weekly Forecast</div>
 
-          <div class="day monday">
+          <div ng-repeat="day in city.list" class="day {{day.day | lowercase}}">
             <div class="weather-icon"></div>
             <div class="description wrapper">
-              <div class="weather-description">Sunny</div>
-              <div class="day-description">Monday</div>
+              <div class="weather-description">{{day.description}}</div>
+              <div class="day-description">{{day.day}}</div>
             </div>
-            <div class="hi-temp">24</div>
-            <div class="low-temp">21</div>
+            <div class="hi-temp">{{day.high}}</div>
+            <div class="low-temp">{{day.low}}</div>
           </div> <!-- /day -->
 
-          <div class="day tuesday">
-            <div class="weather-icon"></div>
-            <div class="description wrapper">
-              <div class="weather-description">Sunny</div>
-              <div class="day-description">Tuesday</div>
-            </div>
-            <div class="hi-temp">24</div>
-            <div class="low-temp">21</div>
-          </div> <!-- /day -->
-
-          <div class="day wednesday">
-            <div class="weather-icon"></div>
-            <div class="description wrapper">
-              <div class="weather-description">Sunny</div>
-              <div class="day-description">Wednesday</div>
-            </div>
-            <div class="hi-temp">24</div>
-            <div class="low-temp">21</div>
-          </div> <!-- /day -->
-
-        </div>
-      </div> <!-- /item -->
-
-      <div class="item new-york">
-        <div class="city-state">
-          <span class="city">New York</span>,
-          <span class="state">NY</span>
-        </div>
-        <div class="country">
-          United States
-        </div>
-        <div class="current">
-          <div class="weather-description rainy"><span class="icon"></span><span class="description">Rainy</span></div>
-          <div class="weather-temp"><span class="num">5</span>&#176;C</div>
-        </div>
-      </div> <!-- /item -->
-
-      <div class="item montreal">
-        <div class="city-state">
-          <span class="city">Montreal</span>,
-          <span class="state">QC</span>
-        </div>
-        <div class="country">
-          Canada
-        </div>
-        <div class="current">
-          <div class="weather-description cloudy"><span class="icon"></span><span class="description">Cloudy</span></div>
-          <div class="weather-temp"><span class="num">5</span>&#176;C</div>
         </div>
       </div> <!-- /item -->
 
