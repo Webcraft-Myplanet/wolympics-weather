@@ -1,0 +1,148 @@
+{
+  "cities": [
+    {
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "country": "Canada"
+      },
+      "current": {
+        "description": "Sunny",
+        "temp": 25
+      },
+      "list": [
+        {
+          "description": "Rainy",
+          "high": 30,
+          "low": 22
+        },
+        {
+          "description": "Cloudy",
+          "high": 32,
+          "low": 24
+        },
+        {
+          "description": "Sunny",
+          "high": 33,
+          "low": 22
+        },
+        {
+          "description": "Sunny",
+          "high": 28,
+          "low": 24
+        },
+        {
+          "description": "Cloudy",
+          "high": 26,
+          "low": 24
+        },
+        {
+          "description": "Rainy",
+          "high": 25,
+          "low": 21
+        },
+        {
+          "description": "Sunny",
+          "high": 35,
+          "low": 31
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Whitehorse",
+        "state": "Yukon",
+        "country": "Canada"
+      },
+      "current": {
+        "description": "Sunny",
+        "temp": 21
+      },
+      "list": [
+        {
+          "description": "Sunny",
+          "high": 23,
+          "low": 18
+        },
+        {
+          "description": "Sunny",
+          "high": 22,
+          "low": 17
+        },
+        {
+          "description": "Sunny",
+          "high": 24,
+          "low": 19
+        },
+        {
+          "description": "Sunny",
+          "high": 25,
+          "low": 19
+        },
+        {
+          "description": "Cloudy",
+          "high": 24,
+          "low": 20
+        },
+        {
+          "description": "Sunny",
+          "high": 23,
+          "low": 19
+        },
+        {
+          "description": "Sunny",
+          "high": 22,
+          "low": 17
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "St John's",
+        "state": "Newfoundland",
+        "country": "Canada"
+      },
+      "current": {
+        "description": "Rainy",
+        "temp": 23
+      },
+      "list": [
+        {
+          "description": "Rainy",
+          "high": 23,
+          "low": 21
+        },
+        {
+          "description": "Cloudy",
+          "high": 25,
+          "low": 22
+        },
+        {
+          "description": "Cloudy",
+          "high": 26,
+          "low": 24
+        },
+        {
+          "description": "Rainy",
+          "high": 25,
+          "low": 23
+        },
+        {
+          "description": "Sunny",
+          "high": 24,
+          "low": 22
+        },
+        {
+          "description": "Rainy",
+          "high": 24,
+          "low": 22
+        },
+        {
+          "description": "Rainy",
+          "high": 26,
+          "low": 23
+        }
+      ]
+    }
+  ]
+}
