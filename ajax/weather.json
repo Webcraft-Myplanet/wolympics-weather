@@ -3,7 +3,7 @@
     {
       "location": {
         "city": "Toronto",
-        "state": "Ontario",
+        "state": "ON",
         "country": "Canada"
       },
       "current": {
@@ -58,7 +58,7 @@
     {
       "location": {
         "city": "Whitehorse",
-        "state": "Yukon",
+        "state": "YT",
         "country": "Canada"
       },
       "current": {
@@ -113,7 +113,7 @@
     {
       "location": {
         "city": "Montreal",
-        "state": "Quebec",
+        "state": "QC",
         "country": "Quebec"
       },
       "current": {
